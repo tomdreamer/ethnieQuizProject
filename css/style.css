@@ -1,0 +1,33 @@
+nav {
+    color: #fff;
+    background-color: #6299e2;
+}
+
+
+.section,
+.no-pad-bot {
+    background-color: #ffffff56;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.teal-text.text-lighten-2 {
+    color:rgb(37, 62, 145) !important;
+    
+}
+
+.teal.lighten-1 {
+    background-color: rgb(10, 40, 172) !important;
+}
+
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: 250px;
+    color: rgba(255,255,255,.9);
+   
+}

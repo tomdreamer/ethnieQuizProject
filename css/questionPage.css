@@ -1,0 +1,26 @@
+
+.imgQuestion{
+    display: flex;
+    flex-direction: row;
+}
+.image,
+aside{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+
+@media (max-width: 576px) { 
+    .image,
+    aside{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    
+    .questionBox{
+        display: flex;
+        flex-direction: column;
+    }
+}
