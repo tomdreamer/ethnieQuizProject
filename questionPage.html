@@ -22,29 +22,30 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
+    
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./css/questionPage.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./css/questionPage.css">
 </head>
 <body>
         <div class="divider"></div>
-        <div class="section imgQuestion">                    
-          <div class="imagediv">
-            <img class="image"   src="./images/mursi.jpg">
+        <div class="section imgQuestion row">                    
+          <div class="imagediv col s6 no-padding">
+            <img class="topImage"   src="./images/kogi.jpg">
           </div>
-          <aside class="questionBox">
+          <aside class="questionBox col s6 padding-20">
             <div class="question">
               <h1 class= "nameEthnie">Kazakhs</h1>
-              <p>Where does this ethnie come's from?</p>
+              <p class="qu">Where does this ethnie come's from?</p>
             </div>
             <div class="card-action">
-              <button><a class="responseA bt">Réponse A : Mongolie</a></button> 
-              <button><a class="responseB bt">Réponse B : Pakistan</a></button> 
-              <button><a class="responseC bt">Réponse C : Etat Unis</a></button> 
+              <button class="response"><a class="responseA bt">Réponse A : Mongolie</a></button> 
+              <button class="response"><a class="responseB bt">Réponse B : Pakistan</a></button> 
+              <button class="response"><a class="responseC bt">Réponse C : Etat Unis</a></button> 
             </div>
           </aside>
         </div>
@@ -71,7 +72,7 @@
       </div>
         <div class="hover_bkgr_fricc">
           <span class="helper"></span>
-          <div>
+          <div class="pop">
               <div class="popupCloseButton"> <br />Next Question <br />  </div>
               <p class ="popUp">Add any HTML content<br />inside the popup box!</p>
           </div>
