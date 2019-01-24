@@ -1,16 +1,16 @@
 questions =[
-    question1 ={
+   {
         question : "Where does this ethnie come's from?",
         nameEthnie : "Kazakhs",
         pays : "Mongolie",
         picture : "./images/kazakh.jpg",
+        right: "Mongolie",
         longitudeA: 46.835291,
         latitudeA: 103.083218,
         longitudeB: 69.34511599999996,
         latitudeB: 30.375321,
         longitudeC: -95.71289100000001,
         latitudeC: 37.09024,
-        right: "Mongolie",
         responseA: "Mongolie",
         responseB: "Pakistan",
         responseC: "Etat Unis",
@@ -20,34 +20,34 @@ questions =[
         question : "Where does this ethnie come's from?",
         nameEthnie : "Maoris",
         pays : "Nouvelle-Zélande",
-        picture : "./images/moaris.jpg",
-        // longitudeA: ,
-        // latitudeA: ,
-        // longitudeB: ,
-        // latitudeB: ,
-        // longitudeC: ,
-        // latitudeC: ,
-        // right: ,
-        // responseA: ,
-        // responseB: ,
-        // responseC: ,
+        picture : "./images/maori.jpg",
+        // longitudeA: 69.34511599999996,
+        // latitudeA: 30.375321,
+        // longitudeB: 103.84665599999994,
+        // latitudeB: 46.862496,
+        // longitudeC: 174.88597100000004,
+        // latitudeC: -40.900557,
+        right: "Nouvelle-Zélande",
+        responseA: "Pakistan",
+        responseB: "Mongolie",
+        responseC: "Nouvelle-Zélande",
         desription : "Les Maoris, constituent un peuple indigène fascinant. Ils sont venus en waka (pirogue) de l’île d’Hawaiki en Polynésie centrale. La culture traditionnelle maori s’exprime à travers l’art, les légendes, les tatouages (ta moko), les danses (en particulier le haka censé intimider l’ennemi), les costumes et un grand sens de l’hospitalité. Peuple polythéiste les Maoris vénèrent de nombreux dieux, déesses et esprits. Ils ont adopté un mode de vie occidental, tout en conservant leurs coutumes sociales et culturelles. L’alimentation de base (kai) est constituée d’oiseaux et de poissons que viennent compléter des herbes sauvages et des racines. Ils cultivent dans leurs jardins des calebasses, et des tubercules comme l’igname et la patate douce (kumara). Ils sont à l’heure actuelle quelque 650.000 Maoris en Nouvelle-Zélande.",
     },
     question3 ={
         question : "Where does this ethnie come's from?",
         nameEthnie : "Mursis",
         pays : "Éthiopie",
-        picture : "./images/mursis",
-        // longitudeA: ,
-        // latitudeA: ,
-        // longitudeB: ,
-        // latitudeB: ,
-        // longitudeC: ,
-        // latitudeC: ,
+        picture : "./images/mursi.jpg",
+        // longitudeA: -14.452361999999994,
+        // latitudeA: 14.497401,
+        // longitudeB: 40.48967300000004,
+        // latitudeB: 9.145000000000001,
+        // longitudeC: 22.937505999999985,
+        // latitudeC: -30.559482,
         // right: ,
-        // responseA: ,
-        // responseB: ,
-        // responseC: ,
+        responseA: "Senegal",
+        responseB: "Éthiopie",
+        responseC: "Afrrique du Sud",
         desription : "Ils vivent non loin de la frontière kenyane, dans la basse vallée de l’Omo. Cette tribu possède son propre idiome, le mursi. Les moyens de subsistance de cette tribu de bergers nomades sont de plus en plus difficiles, suite à de grandes sécheresses, mais aussi la création de parcs nationaux avec leurs clôtures et leurs routes. Les femmes sont connues dans le monde entier pour le labret, plateau d’argile ornant leur bouche. Pour passer de l’enfance à l’âge adulte, les jeunes hommes doivent se soumettre à la cérémonie du « saut du taureau », des bovins sont alignés flancs contre flancs. Chaque homme nu doit effectuer quatre passages sur leurs dos sans tomber. Ils habitent dans des cases faites de roseaux, chaume, branches et brindilles. Ils sont animistes, et croient que tous les éléments de la nature, arbres, pierres… possèdent un esprit. ",
     },
     question4 ={
@@ -55,16 +55,16 @@ questions =[
         nameEthnie : "Samburus",
         pays : "Kenya",
         picture : "./images/samburu.jpg",
-        // longitudeA: ,
-        // latitudeA: ,
-        // longitudeB: ,
-        // latitudeB: ,
-        // longitudeC: ,
-        // latitudeC: ,
+        // longitudeA: 8.675277000000051,
+        // latitudeA: 9.081999,
+        // longitudeB: 133.77513599999997,
+        // latitudeB: -25.274398,
+        // longitudeC: 37.90619300000003,
+        // latitudeC: -0.023559,
         // right: ,
-        // responseA: ,
-        // responseB: ,
-        // responseC: ,
+        responseA: "Nigeria",
+        responseB:  "Autralie" ,
+        responseC: "Kenya",
         desription : "Les Samburus sont environ 140.000 et habitent la province de la Rift Valley dans le nord du Kenya. Les steppes leur permettent de faire l’élevage des bovins, chèvres, moutons et dromadaires. Le samburu est un dialecte de la langue nilotique appelée maa, également parlée par les Massaïs. Ce peuple croit à un créateur lointain, un dieu suprême, qu’ils appellent Nkai ou Ngai. Le culte des ancêtres et même la sorcellerie sont très répandus, ils croient aux envoûtements et pratiquent des rituels traditionnels pour obtenir fécondité, protection, guérison… Ils habitent dans des huttes faites de branchages entrelacés, de peaux de bêtes et de boue, un matériel facile à démonter pour le transport. Les guerriers tressent leurs longs cheveux et les teignent avec de l’ocre rouge. Ils sont tous richement parés de colliers, bracelets et boucles d’oreilles en perles très colorés. ",
     },
     question5 ={
@@ -72,16 +72,16 @@ questions =[
         nameEthnie : "Vanuatuans",
         pays : "Îles du VanuAtu",
         picture : "./images/vanuatuans.jgp",
-        // longitudeA: ,
-        // latitudeA: ,
-        // longitudeB: ,
-        // latitudeB: ,
-        // longitudeC: ,
-        // latitudeC: ,
+        // longitudeA: 168.315741,
+        // latitudeA: -17.7450363,
+        // longitudeB: 165.61804200000006,
+        // latitudeB: -20.904305,
+        // longitudeC: 101.97576600000002,
+        // latitudeC: 4.210484,
         // right: ,
-        // responseA: ,
-        // responseB: ,
-        // responseC: ,
+        responseA: "Îles du VanuAtu",
+        responseB: "Nouvelle Caledonie",
+        responseC: "Malaisie",
         desription :"Ils peuplent la république du Vanuatu, en Mélanésie qui regroupe 83 îles du sud-ouest de l’océan Pacifique. Ils pratiquent de grandes cérémonies et procèdent à des échanges d’aliments : taros, ignames, kava, volailles, cochons et poulets. Le festival de Toka est l’une des manifestations traditionnelles qui dure trois jours. La danse occupe une grande place pour les Vanuatuans. Le namba est un étui pénien traditionnel confectionné avec de l’écorce ou les feuilles du pandanus. Les femmes portent des pagnes confectionnés avec des feuilles, des nattes tissées, des fibres d’hibiscus. Le plat cérémonial le laplap est un gâteau réalisé à partir de racines râpées ou de bananes plantain mélangées à de la noix de coco, des légumes et des viandes, enveloppées dans des feuilles et cuites durant des heures dans un four d’argile traditionnel. ",
     },
     question6 ={
@@ -256,6 +256,33 @@ questions =[
     },
     ]
 
+    //openstreetmap
+    
+    var map = L.map('map').setView([51.5, -0.09], 3);
+
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	var LeafIcon = L.Icon.extend({
+		options: {
+			
+			iconSize:     [50, 64],
+			   
+			iconAnchor:   [25, 62],
+			 
+			popupAnchor:  [-3, -76]
+		}
+	});
+
+	var greenIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"}),
+		redIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"}),
+		orangeIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"});
+
+	L.marker([51.5, -0.09], {icon: greenIcon}).bindPopup("I am a green leaf.").addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+	L.marker([51.495, -0.083], {icon: redIcon}).bindPopup("I am a red leaf.").addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+	L.marker([51.49, -0.1], {icon: orangeIcon}).bindPopup("I am an orange leaf.").addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup(); 
+        
     //Test les valeurs et les inputs
     var question = questions[0];
     console.log(question);
@@ -263,67 +290,184 @@ questions =[
     console.log(typeof(question.right));
     console.log($(".responseA").html());
     console.log(question.right);
-    var total = [];
-    
+    var total = 0;
+
+    intitilise();
+
+    function intitilise(){
+            $(".image").attr('src', questions[0].picture);
+            $(".nameEthnie").html(questions[0].nameEthnie);
+            $(".responseA").html(questions[0].responseA);
+            $(".responseB").html(questions[0].responseB);
+            $(".responseC").html(questions[0].responseC)
+        };
 
 
-    //Test du if statement
-    if(($(".responseA").html()) === question.right){
-        console.log("this is the right answer");
-       // question = questions[+1];
+        
+// Nous initialisons une liste de marqueurs
+var villes = {
+    "Pakistan":{"longitude": 46.835291, "latitude": 103.083218,}, 
+    "Mongolie":{"longitude": 69.34511599999996, "latitude": 30.375321,},
+    "Pakistan":{"longitude": -95.71289100000001, "latitude": 37.09024,},
+};
+// Fonction d'initialisation de la carte
+function initMap() {
+	// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+	macarte = L.map('map').setView([lat, lon], 11);
+	// Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+	L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+		// Il est toujours bien de laisser le lien vers la source des données
+		attribution: 'données © OpenStreetMap/ODbL - rendu OSM France',
+		minZoom: 1,
+		maxZoom: 20
+	}).addTo(macarte);
+	// Nous parcourons la liste des villes
+	for (ville in villes) {
+		var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
+	}               	
+}
+
+
+
+
+  function responseA (){
+      $(".responseA").click(function(){
+        console.log("blabla");
+
+        //Test if the response is correct
+        controleResponseA();
+
+
+        //POPUP box for result
+        $('.hover_bkgr_fricc').show();
+
+        $('.hover_bkgr_fricc').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+        var index = questions.indexOf(question);
+        question = questions[index + 1];
+
         console.log(question);
-       }
-    else{
-           console.log("mince")
-       }
+        //Replace info for next question
+        $(".image").attr('src', question.picture);
+        $(".nameEthnie").html(question.nameEthnie);
+        $(".responseA").html(question.responseA);
+        $(".responseB").html(question.responseB);
+        $(".responseC").html(question.responseC);
+
+        });
+        return question;
+    };
     
+    function responseB(){
+        $(".responseB").click(function(){
+          console.log("blabla");
+          //Test if the response is correct
+
+          controleResponseB();
+          
+
+          //POPUP box for result
+
+          $('.hover_bkgr_fricc').show();
+
+          $('.hover_bkgr_fricc').click(function(){
+              $('.hover_bkgr_fricc').hide();
+          });
+          $('.popupCloseButton').click(function(){
+              $('.hover_bkgr_fricc').hide();
+          });
+          var index = questions.indexOf(question);
+          question = questions[index + 1];
+          console.log(question);
+
+          //Replace info for next question
+
+          $(".image").attr('src', question.picture);
+          $(".nameEthnie").html(question.nameEthnie);
+          $(".responseA").html(question.responseA);
+          $(".responseB").html(question.responseB);
+          $(".responseC").html(question.responseC);
+
+          });
+      };
+      function responseC(){
+        $(".responseC").click(function(){
+          console.log("blabla");
+          //Test if the response is correct
+
+          controleResponseC();
+          
+
+          //POPUP box for result
+
+          $('.hover_bkgr_fricc').show();
+
+          $('.hover_bkgr_fricc').click(function(){
+              $('.hover_bkgr_fricc').hide();
+          });
+          $('.popupCloseButton').click(function(){
+              $('.hover_bkgr_fricc').hide();
+          });
+          var index = questions.indexOf(question);
+          question = questions[index + 1];
+          console.log(question);
+          
+          //Replace info for next question
+
+          $(".image").attr('src', question.picture);
+          $(".nameEthnie").html(question.nameEthnie);
+          $(".responseA").html(question.responseA);
+          $(".responseB").html(question.responseB);
+          $(".responseC").html(question.responseC);
+
+          });
+      };
+
+      responseA ();
+      responseC();
+      responseB();
 
 
-    $(".responseA").click(function(){
-        console.log($(".responseA").html(), "hihihihihihiih");
-        console.log(question);
-    if(($(".responseA").html()) === question.right){
+
+
+    function controleResponseA(){
+        console.log($(".responseA").html());
+
+        if($(".responseA").html() === question.pays){
         console.log("this is the right answer");
-        question = questions[+1];
-        }else if(($(".responseB").html()) === question.right) {
-            console.log("mince")
+          total += 1;
+          $(".popUp").html(`Correct!
+        votre scrore est de ${total}/15`);
+        }else  {
+                total;
+                $(".popUp").html(`Faux, ils viennent de ${question.right}<br /><br /> score:${total}/15`);
         }
-    });
+    };
 
+    function controleResponseB(){
+        if($(".responseB").html() === question.pays){
+            console.log("this is the right answer");
+              total += 1;
+              $(".popUp").html(`Correct!
+            votre scrore est de ${total}/15`);
+        }else  {
+            total;
+            $(".popUp").html(`Faux, ils viennent de ${question.right}<br /><br /> score:${total}/15`);
+        }
+    };
 
-
- 
-
-    // $(".responseA").click(function(){
-    //     console.log("it works")
-    //  questions.forEach(question => {
-    //      console.log($(".responseA").html());
-    //     if($(".responseA").html()=== question.right){
-    //         console.log("this is the right answer");
-    //        }else{
-    //            console.log("")
-    //        }
-    //  });
-    // });
-    //  $(".responseB").click(function(){
-    //      console.log($(".responseB").html());
-    //    if( $(".responseB").html() === "Pakistan"){
-    //        console.log(blabla)
-    //    }
-    //  });
-
-// console.log(questionEnCours);
-
-// $(".responseA").click(function(){
-//     if($(".responseA").html()===question){
-//      console.log("blabla");
-//     }
-//  });
-
-//  $(".responseB").click(function(){
-//      console.log($(".responseB").html());
-//    if( $(".responseB").html() === "Pakistan"){
-//        console.log(blabla)
-//    }
-//  });
-
+    function controleResponseC(){
+        if($(".responseC").html() === question.pays){
+            console.log("this is the right answer");
+              total += 1;
+              $(".popUp").html(`Correct!
+            votre scrore est de ${total}/15`);
+        }else  {
+            total;
+            $(".popUp").html(`Faux, ils viennent de ${question.right}<br /><br /> score:${total}/15`);
+        }
+    };
