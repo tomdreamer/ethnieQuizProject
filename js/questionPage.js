@@ -19,7 +19,7 @@ questions =[
     question2 ={
         question : "From where does this ethnie come's from?",
         nameEthnie : "Maoris",
-        pays : "Nouvelle-Zélande",
+        pays : "Nouvelle Zelande",
         picture : "./images/maori.jpg",
         longitudeA: 69.34511599999996,
         latitudeA: 30.375321,
@@ -27,16 +27,15 @@ questions =[
         latitudeB: 46.862496,
         longitudeC: 174.88597100000004,
         latitudeC: -40.900557,
-        right: "Nouvelle-Zélande",
         responseA: "Pakistan",
         responseB: "Mongolie",
-        responseC: "Nouvelle-Zélande",
+        responseC: "Nouvelle Zelande",
         desription : "Les Maoris, constituent un peuple indigène fascinant. Ils sont venus en waka (pirogue) de l’île d’Hawaiki en Polynésie centrale. La culture traditionnelle maori s’exprime à travers l’art, les légendes, les tatouages (ta moko), les danses (en particulier le haka censé intimider l’ennemi), les costumes et un grand sens de l’hospitalité. Peuple polythéiste les Maoris vénèrent de nombreux dieux, déesses et esprits. Ils ont adopté un mode de vie occidental, tout en conservant leurs coutumes sociales et culturelles. L’alimentation de base (kai) est constituée d’oiseaux et de poissons que viennent compléter des herbes sauvages et des racines. Ils cultivent dans leurs jardins des calebasses, et des tubercules comme l’igname et la patate douce (kumara). Ils sont à l’heure actuelle quelque 650.000 Maoris en Nouvelle-Zélande.",
     },
     question3 ={
         question : "From where does this ethnie come's from?",
         nameEthnie : "Mursis",
-        pays : "Éthiopie",
+        pays : "Ethiopie",
         picture : "./images/mursi.jpg",
         longitudeA: -14.452361999999994,
         latitudeA: 14.497401,
@@ -46,7 +45,7 @@ questions =[
         latitudeC: -30.559482,
         
         responseA: "Senegal",
-        responseB: "Éthiopie",
+        responseB: "Ethiopie",
         responseC: "Afrrique du Sud",
         desription : "Ils vivent non loin de la frontière kenyane, dans la basse vallée de l’Omo. Cette tribu possède son propre idiome, le mursi. Les moyens de subsistance de cette tribu de bergers nomades sont de plus en plus difficiles, suite à de grandes sécheresses, mais aussi la création de parcs nationaux avec leurs clôtures et leurs routes. Les femmes sont connues dans le monde entier pour le labret, plateau d’argile ornant leur bouche. Pour passer de l’enfance à l’âge adulte, les jeunes hommes doivent se soumettre à la cérémonie du « saut du taureau », des bovins sont alignés flancs contre flancs. Chaque homme nu doit effectuer quatre passages sur leurs dos sans tomber. Ils habitent dans des cases faites de roseaux, chaume, branches et brindilles. Ils sont animistes, et croient que tous les éléments de la nature, arbres, pierres… possèdent un esprit. ",
     },
@@ -61,7 +60,6 @@ questions =[
         latitudeB: -25.274398,
         longitudeC: 37.90619300000003,
         latitudeC: -0.023559,
-        
         responseA: "Nigeria",
         responseB:  "Autralie" ,
         responseC: "Kenya",
@@ -86,7 +84,7 @@ questions =[
     },
     question6 ={
         question : "From where does this ethnie come's from?",
-        nameEthnie : "papou",
+        nameEthnie : "Papou",
         pays : "Papouasie-Nouvelle-Guinée",
         picture : "./images/papou.jpg",
         longitudeA:  -72.285215,
@@ -186,13 +184,18 @@ questions =[
             $(".nameEthnie").html(questions[0].nameEthnie);
             $(".responseA").html(questions[0].responseA);
             $(".responseB").html(questions[0].responseB);
-            $(".responseC").html(questions[0].responseC)
+            $(".responseC").html(questions[0].responseC);
+            $(".description").html(questions[0].desription);
         };
 
 
 
   function responseA (){
-      $(".responseA").click(function(){
+    $(".responseA").click(function(){
+        //If is to restart the quizz if finish
+    if (questions.indexOf(question)==-1){
+          question = questions[0];
+      
         console.log("blabla");
 
         //Test if the response is correct
@@ -208,7 +211,7 @@ questions =[
         //Next informations in the array of questions
         var index = questions.indexOf(question);
         question = questions[index + 1];
-
+        
 
         //Replace info for next question
         
@@ -216,63 +219,146 @@ questions =[
 
         //Update the markers on the map
         updateMarker();
-    });
+      }
+      else {
+
+        //Test if the response is correct
+        controleResponseA();
+
+
+        //POPUP box for result
+        popup();
+
+        removeMarkerPrevuisQus();
+
         
+        //Next informations in the array of questions
+        var index = questions.indexOf(question);
+        question = questions[index + 1];
+        
+
+        //Replace info for next question
+        
+        changeQuestion();
+
+        //Update the markers on the map
+        updateMarker();
+        };
+        });
     };
     
     function responseB(){
         $(".responseB").click(function(){
-          console.log("blabla");
-          //Test if the response is correct
+            if (questions.indexOf(question)==-1){
+                  question = questions[0];
+              
+                console.log("blabla");
+        
+                //Test if the response is correct
+                controleResponseB();
+        
+        
+                //POPUP box for result
+                popup();
+        
+                removeMarkerPrevuisQus();
+        
+                
+                //Next informations in the array of questions
+                var index = questions.indexOf(question);
+                question = questions[index + 1];
+                
+        
+                //Replace info for next question
+                
+                changeQuestion();
+        
+                //Update the markers on the map
+                updateMarker();
+              }
+              else {
+        
+                //Test if the response is correct
+                controleResponseB();
+        
+        
+                //POPUP box for result
+                popup();
+        
+                removeMarkerPrevuisQus();
+        
+                
+                //Next informations in the array of questions
+                var index = questions.indexOf(question);
+                question = questions[index + 1];
+                
+        
+                //Replace info for next question
+                
+                changeQuestion();
+        
+                //Update the markers on the map
+                updateMarker();
+                };
+                });
+            };
 
-          controleResponseB();
-          
 
-          //POPUP box for result
-
-          popup();
-
-
-          removeMarkerPrevuisQus();
-
-          var index = questions.indexOf(question);
-          question = questions[index + 1];
-          console.log(question);
-
-          //Replace info for next question
-
-          changeQuestion();
-
-          //Update the markers on the map
-          updateMarker();
-          });
-      };
       function responseC(){
         $(".responseC").click(function(){
-          console.log("blabla");
-          //Test if the response is correct
-
-          controleResponseC();
-          
-
-          //POPUP box for result
-
-          popup();
-
-
-          removeMarkerPrevuisQus();
-          var index = questions.indexOf(question);
-          question = questions[index + 1];
-          console.log(question);
-          
-          //Replace info for next question
-
-          changeQuestion();
-
-          //Update the markers on the map
-          updateMarker();
-          });
-      };
+            if (questions.indexOf(question)==-1){
+                  question = questions[0];
+              
+                console.log("blabla");
+        
+                //Test if the response is correct
+                controleResponseC();
+        
+        
+                //POPUP box for result
+                popup();
+        
+                removeMarkerPrevuisQus();
+        
+                
+                //Next informations in the array of questions
+                var index = questions.indexOf(question);
+                question = questions[index + 1];
+                
+        
+                //Replace info for next question
+                
+                changeQuestion();
+        
+                //Update the markers on the map
+                updateMarker();
+              }
+              else {
+        
+                //Test if the response is correct
+                controleResponseC();
+        
+        
+                //POPUP box for result
+                popup();
+        
+                removeMarkerPrevuisQus();
+        
+                
+                //Next informations in the array of questions
+                var index = questions.indexOf(question);
+                question = questions[index + 1];
+                
+        
+                //Replace info for next question
+                
+                changeQuestion();
+        
+                //Update the markers on the map
+                updateMarker();
+                };
+                });
+            };
 
       responseA ();
       responseC();
@@ -280,43 +366,80 @@ questions =[
 
 
 
-
+            //this function controle if the response A is correct or not after a click on the button
     function controleResponseA(){
         console.log($(".responseA").html());
-
+        
         if($(".responseA").html() === question.pays){
-        console.log("this is the right answer");
-          total += 1;
-          $(".popUp").html(`Correct!
-        votre score est de ${total}/15`);
-        }else  {
+            console.log(questions.indexOf(question));
+            //this allow us to restart the quizz
+            if (questions.indexOf(question)==questions.length-1){
+                total += 1;
+                $(".popUp").html(`Correct!
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10`);
+                total =0;
+            }else { 
+                total += 1;
+                $(".popUp").html(`Correct! Votre score est de ${total}/10`);}
+        }else {
+            console.log(questions.indexOf(question));
+            if (questions.indexOf(question)==questions.length-1){
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.right}<br /><br /> score:${total}/15`);
-        }
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10`);
+                total =0;
+            }else  {
+                total;
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10`);
+            }
+        };
     };
 
     function controleResponseB(){
         if($(".responseB").html() === question.pays){
-            console.log("this is the right answer");
-              total += 1;
-              $(".popUp").html(`Correct!
-            votre score est de ${total}/15`);
-        }else  {
-            total;
-            $(".popUp").html(`Faux, ils viennent de ${question.right}<br /><br /> score:${total}/15`);
-        }
+            console.log(questions.indexOf(question));
+            if (questions.indexOf(question)==questions.length-1){
+                total += 1;
+                $(".popUp").html(`Correct!
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10`);
+                total =0;
+            }else { 
+                total += 1;
+                $(".popUp").html(`Correct! Votre score est de ${total}/10`);}
+        }else {
+            console.log(questions.indexOf(question));
+            if (questions.indexOf(question)==questions.length-1){
+                total;
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10`);
+                total =0;
+            }else  {
+                total;
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10`);
+            }
+        };
     };
 
     function controleResponseC(){
         if($(".responseC").html() === question.pays){
-            console.log("this is the right answer");
-              total += 1;
-              $(".popUp").html(`Correct!
-            votre score est de ${total}/15`);
-        }else  {
-            total;
-            $(".popUp").html(`Faux, ils viennent de ${question.right}<br /><br /> score:${total}/15`);
-        }
+            console.log(questions.indexOf(question));
+            if (questions.indexOf(question)==questions.length-1){
+                total += 1;
+                $(".popUp").html(`Correct!
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10`);
+                total =0;
+            }else { 
+                total += 1;
+                $(".popUp").html(`Correct! Votre score est de ${total}/10`);}
+        }else {
+            console.log(questions.indexOf(question));
+            if (questions.indexOf(question)==questions.length-1){
+                total;
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10`);
+                total =0;
+            }else  {
+                total;
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10`);
+            }
+        };
     };
     
     function popup(){
@@ -332,21 +455,27 @@ questions =[
 
 
     function changeQuestion(){
+        if(questions.indexOf(question)==-1){
+            intitilise();
+        }
+        else{
         $(".topImage").attr('src', question.picture);
         $(".nameEthnie").html(question.nameEthnie);
         $(".responseA").html(question.responseA);
         $(".responseB").html(question.responseB);
         $(".responseC").html(question.responseC);
         $(".description").html(question.desription);
+        }
     }
-     //openstreetmap initialize
+     //openstreetmap add map and informations
     
-     var map = L.map('map').setView([51.5, -0.09], 1);
+     var map = L.map('map').setView([40, -0.09], 2);
 
      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
      }).addTo(map);
  
+     //Size of the icon
      var LeafIcon = L.Icon.extend({
          options: {
              
@@ -358,13 +487,13 @@ questions =[
          }
      });
      
-     var greenIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/iconfinder_map-marker_285659.svg"}),
-         redIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/iconfinder_map-marker_285659.svg"}),
-         orangeIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/iconfinder_map-marker_285659.svg"});
+     var iconResA = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/iconfinder_map-marker_285659.svg"}),
+         iconResB = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/iconfinder_map-marker_285659.svg"}),
+         iconRespC = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/iconfinder_map-marker_285659.svg"});
          
-        var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
-        var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
-        var MarkerC = L.marker([questions[0].latitudeC, question.longitudeC], {icon: orangeIcon}).bindPopup(`<b>${questions[0].responseC}</b><br />Response C`).addTo(map);
+        var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: iconResA}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
+        var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: iconResB}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
+        var MarkerC = L.marker([questions[0].latitudeC, question.longitudeC], {icon: iconRespC}).bindPopup(`<b>${questions[0].responseC}</b><br />Response C`).addTo(map);
 
      // Remove the previus marker 
 
@@ -376,7 +505,16 @@ questions =[
 
         //Update the position with new Marker for next question
         function updateMarker(){
-            MarkerA = L.marker([question.latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${question.responseA}</b><br />Response A`).addTo(map);
-            MarkerB = L.marker([question.latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${question.responseB}</b><br />Response B`).addTo(map);
-            MarkerC = L.marker([question.latitudeC, question.longitudeC], {icon: orangeIcon}).bindPopup(`<b>${question.responseC}</b><br />Response C`).addTo(map);
+            if(questions.indexOf(question)==-1){
+                
+            MarkerA = L.marker([questions[0].latitudeA, questions[0].longitudeA], {icon: iconResA}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
+            MarkerB = L.marker([questions[0].latitudeB, questions[0].longitudeB], {icon: iconResB}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
+            MarkerC = L.marker([questions[0].latitudeC, questions[0].longitudeC], {icon: iconRespC}).bindPopup(`<b>${questions[0].responseC}</b><br />Response C`).addTo(map);
+            var question = questions[0];
+        }
+            else{
+            MarkerA = L.marker([question.latitudeA, question.longitudeA], {icon: iconResA}).bindPopup(`<b>${question.responseA}</b><br />Response A`).addTo(map);
+            MarkerB = L.marker([question.latitudeB, question.longitudeB], {icon: iconResB}).bindPopup(`<b>${question.responseB}</b><br />Response B`).addTo(map);
+            MarkerC = L.marker([question.latitudeC, question.longitudeC], {icon: iconRespC}).bindPopup(`<b>${question.responseC}</b><br />Response C`).addTo(map);
                }  
+        };
