@@ -5,8 +5,8 @@ questions =[
         pays : "Mongolie",
         picture : "./images/kazakh.jpg",
         right: "Mongolie",
-        longitudeA: 46.835291,
-        latitudeA: 103.083218,
+        longitudeA: 103.84665599999994,
+        latitudeA: 46.862496,
         longitudeB: 69.34511599999996,
         latitudeB: 30.375321,
         longitudeC: -95.71289100000001,
@@ -21,12 +21,12 @@ questions =[
         nameEthnie : "Maoris",
         pays : "Nouvelle-Zélande",
         picture : "./images/maori.jpg",
-        // longitudeA: 69.34511599999996,
-        // latitudeA: 30.375321,
-        // longitudeB: 103.84665599999994,
-        // latitudeB: 46.862496,
-        // longitudeC: 174.88597100000004,
-        // latitudeC: -40.900557,
+        longitudeA: 69.34511599999996,
+        latitudeA: 30.375321,
+        longitudeB: 103.84665599999994,
+        latitudeB: 46.862496,
+        longitudeC: 174.88597100000004,
+        latitudeC: -40.900557,
         right: "Nouvelle-Zélande",
         responseA: "Pakistan",
         responseB: "Mongolie",
@@ -38,13 +38,13 @@ questions =[
         nameEthnie : "Mursis",
         pays : "Éthiopie",
         picture : "./images/mursi.jpg",
-        // longitudeA: -14.452361999999994,
-        // latitudeA: 14.497401,
-        // longitudeB: 40.48967300000004,
-        // latitudeB: 9.145000000000001,
-        // longitudeC: 22.937505999999985,
-        // latitudeC: -30.559482,
-        // right: ,
+        longitudeA: -14.452361999999994,
+        latitudeA: 14.497401,
+        longitudeB: 40.48967300000004,
+        latitudeB: 9.145000000000001,
+        longitudeC: 22.937505999999985,
+        latitudeC: -30.559482,
+        
         responseA: "Senegal",
         responseB: "Éthiopie",
         responseC: "Afrrique du Sud",
@@ -55,13 +55,13 @@ questions =[
         nameEthnie : "Samburus",
         pays : "Kenya",
         picture : "./images/samburu.jpg",
-        // longitudeA: 8.675277000000051,
-        // latitudeA: 9.081999,
-        // longitudeB: 133.77513599999997,
-        // latitudeB: -25.274398,
-        // longitudeC: 37.90619300000003,
-        // latitudeC: -0.023559,
-        // right: ,
+        longitudeA: 8.675277000000051,
+        latitudeA: 9.081999,
+        longitudeB: 133.77513599999997,
+        latitudeB: -25.274398,
+        longitudeC: 37.90619300000003,
+        latitudeC: -0.023559,
+        
         responseA: "Nigeria",
         responseB:  "Autralie" ,
         responseC: "Kenya",
@@ -72,13 +72,13 @@ questions =[
         nameEthnie : "Vanuatuans",
         pays : "Îles du VanuAtu",
         picture : "./images/vanuatuans.jgp",
-        // longitudeA: 168.315741,
-        // latitudeA: -17.7450363,
-        // longitudeB: 165.61804200000006,
-        // latitudeB: -20.904305,
-        // longitudeC: 101.97576600000002,
-        // latitudeC: 4.210484,
-        // right: ,
+        longitudeA: 168.315741,
+        latitudeA: -17.7450363,
+        longitudeB: 165.61804200000006,
+        latitudeB: -20.904305,
+        longitudeC: 101.97576600000002,
+        latitudeC: 4.210484,
+        
         responseA: "Îles du VanuAtu",
         responseB: "Nouvelle Caledonie",
         responseC: "Malaisie",
@@ -256,33 +256,9 @@ questions =[
     },
     ]
 
-    //openstreetmap
-    
-    var map = L.map('map').setView([51.5, -0.09], 3);
-
-	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
-
-	var LeafIcon = L.Icon.extend({
-		options: {
-			
-			iconSize:     [50, 64],
-			   
-			iconAnchor:   [25, 62],
-			 
-			popupAnchor:  [-3, -76]
-		}
-	});
-
-	var greenIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"}),
-		redIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"}),
-		orangeIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"});
-
-	L.marker([51.5, -0.09], {icon: greenIcon}).bindPopup("I am a green leaf.").addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-	L.marker([51.495, -0.083], {icon: redIcon}).bindPopup("I am a red leaf.").addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-	L.marker([51.49, -0.1], {icon: orangeIcon}).bindPopup("I am an orange leaf.").addTo(map).bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup(); 
+   
         
+    
     //Test les valeurs et les inputs
     var question = questions[0];
     console.log(question);
@@ -304,28 +280,6 @@ questions =[
 
 
         
-// Nous initialisons une liste de marqueurs
-var villes = {
-    "Pakistan":{"longitude": 46.835291, "latitude": 103.083218,}, 
-    "Mongolie":{"longitude": 69.34511599999996, "latitude": 30.375321,},
-    "Pakistan":{"longitude": -95.71289100000001, "latitude": 37.09024,},
-};
-// Fonction d'initialisation de la carte
-function initMap() {
-	// Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
-	macarte = L.map('map').setView([lat, lon], 11);
-	// Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
-	L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-		// Il est toujours bien de laisser le lien vers la source des données
-		attribution: 'données © OpenStreetMap/ODbL - rendu OSM France',
-		minZoom: 1,
-		maxZoom: 20
-	}).addTo(macarte);
-	// Nous parcourons la liste des villes
-	for (ville in villes) {
-		var marker = L.marker([villes[ville].lat, villes[ville].lon]).addTo(macarte);
-	}               	
-}
 
 
 
@@ -347,6 +301,7 @@ function initMap() {
         $('.popupCloseButton').click(function(){
             $('.hover_bkgr_fricc').hide();
         });
+        removeMarkerPrevuisQus();
         var index = questions.indexOf(question);
         question = questions[index + 1];
 
@@ -357,9 +312,11 @@ function initMap() {
         $(".responseA").html(question.responseA);
         $(".responseB").html(question.responseB);
         $(".responseC").html(question.responseC);
-
-        });
-        return question;
+        
+        //Update the markers on the map
+        updateMarker();
+    });
+        
     };
     
     function responseB(){
@@ -380,6 +337,8 @@ function initMap() {
           $('.popupCloseButton').click(function(){
               $('.hover_bkgr_fricc').hide();
           });
+          removeMarkerPrevuisQus();
+
           var index = questions.indexOf(question);
           question = questions[index + 1];
           console.log(question);
@@ -392,6 +351,8 @@ function initMap() {
           $(".responseB").html(question.responseB);
           $(".responseC").html(question.responseC);
 
+          //Update the markers on the map
+          updateMarker();
           });
       };
       function responseC(){
@@ -412,6 +373,7 @@ function initMap() {
           $('.popupCloseButton').click(function(){
               $('.hover_bkgr_fricc').hide();
           });
+          removeMarkerPrevuisQus();
           var index = questions.indexOf(question);
           question = questions[index + 1];
           console.log(question);
@@ -424,6 +386,8 @@ function initMap() {
           $(".responseB").html(question.responseB);
           $(".responseC").html(question.responseC);
 
+          //Update the markers on the map
+          updateMarker();
           });
       };
 
@@ -471,3 +435,48 @@ function initMap() {
             $(".popUp").html(`Faux, ils viennent de ${question.right}<br /><br /> score:${total}/15`);
         }
     };
+    
+        
+    
+
+     //openstreetmap initialize
+    
+     var map = L.map('map').setView([51.5, -0.09], 1);
+
+     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+     }).addTo(map);
+ 
+     var LeafIcon = L.Icon.extend({
+         options: {
+             
+             iconSize:     [50, 64],
+                
+             iconAnchor:   [25, 62],
+              
+             popupAnchor:  [-3, -76]
+         }
+     });
+     
+     var greenIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"}),
+         redIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"}),
+         orangeIcon = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/icons8-place-marker-64.png"});
+         
+        var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
+        var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
+        var MarkerC = L.marker([questions[0].latitudeC, question.longitudeC], {icon: orangeIcon}).bindPopup(`<b>${questions[0].responseC}</b><br />Response C`).addTo(map);
+
+     // Remove the previus marker 
+
+        function removeMarkerPrevuisQus(){
+            MarkerA.remove();
+            MarkerB.remove();
+            MarkerC.remove();
+        }
+
+        //Update the position with new Marker for next question
+        function updateMarker(){
+            MarkerA = L.marker([question.latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${question.responseA}</b><br />Response A`).addTo(map);
+            MarkerB = L.marker([question.latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${question.responseB}</b><br />Response B`).addTo(map);
+            MarkerC = L.marker([question.latitudeC, question.longitudeC], {icon: orangeIcon}).bindPopup(`<b>${question.responseC}</b><br />Response C`).addTo(map);
+               }  

@@ -1,7 +1,7 @@
 
 #mapid{
     width: auto; 
-    height:250px;} 
+    height:400px;} 
 
 /* Popup box BEGIN */
 .hover_bkgr_fricc{
@@ -60,13 +60,20 @@
     display: inline-block;
     font-weight: bold;
 }
-/* Popup box BEGIN */
+
+
+/* design for full screen */
 
 .section{
     margin: 0px;
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
+.imgQuestion{
+    display: flex;
+    flex-grow:1;
+}
+
 
 .image,
 aside{
@@ -79,16 +86,55 @@ aside{
     display: flex;
     flex-direction: column;
 }
+.card-action{
+    display: flex;
+    flex-direction: column;
+}
 
-.btn-large {
-    height: 54px;
-    line-height: 54px;
-    font-size: 10px;
-    padding: 0 28px;
+
+/* BUTTON */
+a{
+    color: white;
 }
-#map {
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    margin: 3px;
+    text-decoration: none;
+    background:linear-gradient(#e66465, #9198e5);
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* BUTTON*/
+#map  {
     height: 300px;
+   
 }
+
 @media (min-width: 576px) { 
     
     .imgQuestion{
