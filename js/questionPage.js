@@ -478,7 +478,7 @@ questions =[
      //Size of the icon
      var LeafIcon = L.Icon.extend({
          options: {
-             
+            iconUrl: 'D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/placeholder.png',
              iconSize:     [56, 66],
                 
              iconAnchor:   [28, 66],

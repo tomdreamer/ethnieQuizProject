@@ -1,4 +1,10 @@
-
+body{
+    background-image: url("../images/font.jpg");
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
 #mapid{
     width: auto; 
     height:400px;} 
@@ -132,7 +138,7 @@ button {
     border-radius: 3px;
     margin: 3px;
     text-decoration: none;
-    background:linear-gradient(#292424a4, #5e554b);
+    background:linear-gradient(#504941, #5e554b);
     color: #ffffff;
     font-family: sans-serif;
     font-size: 1rem;
