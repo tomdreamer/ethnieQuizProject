@@ -139,7 +139,12 @@ aside{
     margin: 5px 60px;
 }
 
-
+.home{
+    height: 21px;
+    line-height: 2px;
+    font-size: 11px;
+    padding: 12px;
+}
 
 /* BUTTON */
 #download-button{

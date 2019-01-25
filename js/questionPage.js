@@ -13,7 +13,7 @@ questions =[
         latitudeC: 37.09024,
         responseA: "Mongolie",
         responseB: "Pakistan",
-        responseC: "Etats Unis",
+        responseC: "Etat Unis",
         desription : "Ils sont issus d’une ethnie turque du nord de l’Asie centrale, sont semi-nomades et vivent du pastoralisme, parmi leurs traditions on peut noter, la chasse à l’aigle. Ils portent alors un manteau noir, un chapeau bordé de fourrure, le loovuuz, et des bottes. Ils vivent dans les yourtes richement aménagées avec des étoffes brodées et du feutre. Ce sont de grands consommateurs de viande d’agneau, cheval, qu’ils ont coutume de saler et de sécher pour la conserver. Ils privilégient le lait aigre, qui se conserve mieux et est plus approprié au mode de vie nomade.",
     },
     question2 ={
@@ -376,20 +376,20 @@ questions =[
             if (questions.indexOf(question)==questions.length-1){
                 total += 1;
                 $(".popUp").html(`Correct!
-                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <button><a href="./questionPage.html">page d'acceuille</a></button>`);
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
                 total =0;
             }else { 
                 total += 1;
-                $(".popUp").html(`Correct! Votre score est de ${total}/10`);}
+                $(".popUp").html(`Correct! Votre score est de ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);}
         }else {
             console.log(questions.indexOf(question));
             if (questions.indexOf(question)==questions.length-1){
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
                 total =0;
             }else  {
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
             }
         };
     };
@@ -400,20 +400,20 @@ questions =[
             if (questions.indexOf(question)==questions.length-1){
                 total += 1;
                 $(".popUp").html(`Correct!
-                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
                 total =0;
             }else { 
                 total += 1;
-                $(".popUp").html(`Correct! Votre score est de ${total}/10`);}
+                $(".popUp").html(`Correct! Votre score est de ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);}
         }else {
             console.log(questions.indexOf(question));
             if (questions.indexOf(question)==questions.length-1){
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
                 total =0;
             }else  {
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
             }
         };
     };
@@ -424,20 +424,20 @@ questions =[
             if (questions.indexOf(question)==questions.length-1){
                 total += 1;
                 $(".popUp").html(`Correct!
-                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a> `);
                 total =0;
             }else { 
                 total += 1;
-                $(".popUp").html(`Correct! Votre score est de ${total}/10`);}
+                $(".popUp").html(`Correct! Votre score est de ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);}
         }else {
             console.log(questions.indexOf(question));
             if (questions.indexOf(question)==questions.length-1){
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a> `);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
                 total =0;
             }else  {
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> Score:${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>`);
             }
         };
     };
@@ -467,33 +467,32 @@ questions =[
         $(".description").html(question.desription);
         }
     }
-     //openstreetmap add map and informations
-    
+     //openstreetmap initialize
+     
      var map = L.map('map').setView([40, -0.09], 2);
-
+ 
      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
      }).addTo(map);
  
-     //Size of the icon
      var LeafIcon = L.Icon.extend({
          options: {
-            iconUrl: './images/iconfinder_map-marker_285659.svg',
-             iconSize:     [56, 66],
+             
+             iconSize:     [50, 64],
                 
-             iconAnchor:   [28, 66],
+             iconAnchor:   [25, 62],
               
-             popupAnchor:  [0, -30]
+             popupAnchor:  [-3, -76]
          }
      });
      
-     var iconResA = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
-         iconResB = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
-         iconRespC = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"});
+     var greenIcon = new LeafIcon({iconUrl: "./images/placeholder.png"}),
+         redIcon = new LeafIcon({iconUrl: "./images/placeholder.png"}),
+         orangeIcon = new LeafIcon({iconUrl: "./images/placeholder.png"});
          
-        var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: iconResA}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
-        var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: iconResB}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
-        var MarkerC = L.marker([questions[0].latitudeC, question.longitudeC], {icon: iconRespC}).bindPopup(`<b>${questions[0].responseC}</b><br />Response C`).addTo(map);
+        var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
+        var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
+        var MarkerC = L.marker([questions[0].latitudeC, question.longitudeC], {icon: orangeIcon}).bindPopup(`<b>${questions[0].responseC}</b><br />Response C`).addTo(map);
 
      // Remove the previus marker 
 
@@ -505,16 +504,7 @@ questions =[
 
         //Update the position with new Marker for next question
         function updateMarker(){
-            if(questions.indexOf(question)==-1){
-                
-            MarkerA = L.marker([questions[0].latitudeA, questions[0].longitudeA], {icon: iconResA}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
-            MarkerB = L.marker([questions[0].latitudeB, questions[0].longitudeB], {icon: iconResB}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
-            MarkerC = L.marker([questions[0].latitudeC, questions[0].longitudeC], {icon: iconRespC}).bindPopup(`<b>${questions[0].responseC}</b><br />Response C`).addTo(map);
-            var question = questions[0];
-        }
-            else{
-            MarkerA = L.marker([question.latitudeA, question.longitudeA], {icon: iconResA}).bindPopup(`<b>${question.responseA}</b><br />Response A`).addTo(map);
-            MarkerB = L.marker([question.latitudeB, question.longitudeB], {icon: iconResB}).bindPopup(`<b>${question.responseB}</b><br />Response B`).addTo(map);
-            MarkerC = L.marker([question.latitudeC, question.longitudeC], {icon: iconRespC}).bindPopup(`<b>${question.responseC}</b><br />Response C`).addTo(map);
+            MarkerA = L.marker([question.latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${question.responseA}</b><br />Response A`).addTo(map);
+            MarkerB = L.marker([question.latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${question.responseB}</b><br />Response B`).addTo(map);
+            MarkerC = L.marker([question.latitudeC, question.longitudeC], {icon: orangeIcon}).bindPopup(`<b>${question.responseC}</b><br />Response C`).addTo(map);
                }  
-        };
