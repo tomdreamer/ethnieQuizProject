@@ -478,7 +478,7 @@ questions =[
      //Size of the icon
      var LeafIcon = L.Icon.extend({
          options: {
-            iconUrl: 'D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/placeholder.png',
+            iconUrl: './images/iconfinder_map-marker_285659.svg',
              iconSize:     [56, 66],
                 
              iconAnchor:   [28, 66],
@@ -487,9 +487,9 @@ questions =[
          }
      });
      
-     var iconResA = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/placeholder.png"}),
-         iconResB = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/placeholder.png"}),
-         iconRespC = new LeafIcon({iconUrl: "D:/DATA/t.lesage/code/labs/module1/EthnieQuizProject/images/placeholder.png"});
+     var iconResA = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
+         iconResB = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
+         iconRespC = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"});
          
         var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: iconResA}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
         var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: iconResB}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
