@@ -58,6 +58,7 @@ body{
 
 p{
     font-size: 14px;
+    
 }
 
 .nav-wrapper{
@@ -84,6 +85,10 @@ li{
 
 .descriptionCss{
     padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 40px;
+    opacity: 0.75;
 }
 
 .section{
@@ -96,12 +101,17 @@ li{
 }
 
 .question{
-    margin-bottom: 10px;
+    
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 40px 40px 0 40px ;
+    opacity: 0.75;
 }
 
 .topImage{
     object-fit: cover;
     margin-left: 38px;
+    
 }
 .topImage,
 aside{
@@ -130,7 +140,11 @@ aside{
 }
 
 
+
 /* BUTTON */
+#download-button{
+    background:linear-gradient(#504941, #5e554b) !important;
+}
 button {
     display: inline-block;
     border: none;
@@ -167,7 +181,7 @@ button:active {
 #map  {
     height: 500px;
     margin: 38px;
-   
+    border-radius: 10px;
 }
 
 @media (min-width: 576px) { 

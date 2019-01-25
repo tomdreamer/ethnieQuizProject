@@ -376,7 +376,7 @@ questions =[
             if (questions.indexOf(question)==questions.length-1){
                 total += 1;
                 $(".popUp").html(`Correct!
-                VOUS AVEZ UN SCORE TOTAL DE ${total}/10`);
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <button><a href="./questionPage.html">page d'acceuille</a></button>`);
                 total =0;
             }else { 
                 total += 1;
@@ -385,7 +385,7 @@ questions =[
             console.log(questions.indexOf(question));
             if (questions.indexOf(question)==questions.length-1){
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
                 total =0;
             }else  {
                 total;
@@ -400,7 +400,7 @@ questions =[
             if (questions.indexOf(question)==questions.length-1){
                 total += 1;
                 $(".popUp").html(`Correct!
-                VOUS AVEZ UN SCORE TOTAL DE ${total}/10`);
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
                 total =0;
             }else { 
                 total += 1;
@@ -409,7 +409,7 @@ questions =[
             console.log(questions.indexOf(question));
             if (questions.indexOf(question)==questions.length-1){
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
                 total =0;
             }else  {
                 total;
@@ -424,7 +424,7 @@ questions =[
             if (questions.indexOf(question)==questions.length-1){
                 total += 1;
                 $(".popUp").html(`Correct!
-                VOUS AVEZ UN SCORE TOTAL DE ${total}/10`);
+                VOUS AVEZ UN SCORE TOTAL DE ${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>`);
                 total =0;
             }else { 
                 total += 1;
@@ -433,7 +433,7 @@ questions =[
             console.log(questions.indexOf(question));
             if (questions.indexOf(question)==questions.length-1){
                 total;
-                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10`);
+                $(".popUp").html(`Faux, ils viennent de ${question.pays}!<br /><br /> VOTRE SCORE FINAL EST DE :${total}/10 <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a> `);
                 total =0;
             }else  {
                 total;
