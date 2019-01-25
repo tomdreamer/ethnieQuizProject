@@ -13,7 +13,7 @@ questions =[
         latitudeC: 37.09024,
         responseA: "Mongolie",
         responseB: "Pakistan",
-        responseC: "Etat Unis",
+        responseC: "Etats Unis",
         desription : "Ils sont issus d’une ethnie turque du nord de l’Asie centrale, sont semi-nomades et vivent du pastoralisme, parmi leurs traditions on peut noter, la chasse à l’aigle. Ils portent alors un manteau noir, un chapeau bordé de fourrure, le loovuuz, et des bottes. Ils vivent dans les yourtes richement aménagées avec des étoffes brodées et du feutre. Ce sont de grands consommateurs de viande d’agneau, cheval, qu’ils ont coutume de saler et de sécher pour la conserver. Ils privilégient le lait aigre, qui se conserve mieux et est plus approprié au mode de vie nomade.",
     },
     question2 ={
