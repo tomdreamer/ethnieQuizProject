@@ -486,9 +486,9 @@ questions =[
          }
      });
      
-     var greenIcon = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
-         redIcon = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
-         orangeIcon = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"});
+     var greenIcon = new LeafIcon({iconUrl: "./images/placeholder.png"}),
+         redIcon = new LeafIcon({iconUrl: "./images/placeholder.png"}),
+         orangeIcon = new LeafIcon({iconUrl: "./images/placeholder.png"});
          
         var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
         var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
