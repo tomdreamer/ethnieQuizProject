@@ -486,9 +486,9 @@ questions =[
          }
      });
      
-     var greenIcon = new LeafIcon({iconUrl: "./images/placeholder.png"}),
-         redIcon = new LeafIcon({iconUrl: "./images/placeholder.png"}),
-         orangeIcon = new LeafIcon({iconUrl: "./images/placeholder.png"});
+     var greenIcon = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
+         redIcon = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"}),
+         orangeIcon = new LeafIcon({iconUrl: "./images/iconfinder_map-marker_285659.svg"});
          
         var MarkerA = L.marker([questions[0].latitudeA, question.longitudeA], {icon: greenIcon}).bindPopup(`<b>${questions[0].responseA}</b><br />Response A`).addTo(map);
         var MarkerB = L.marker([questions[0].latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${questions[0].responseB}</b><br />Response B`).addTo(map);
@@ -508,3 +508,16 @@ questions =[
             MarkerB = L.marker([question.latitudeB, question.longitudeB], {icon: redIcon}).bindPopup(`<b>${question.responseB}</b><br />Response B`).addTo(map);
             MarkerC = L.marker([question.latitudeC, question.longitudeC], {icon: orangeIcon}).bindPopup(`<b>${question.responseC}</b><br />Response C`).addTo(map);
                }  
+            //scroll down
+            $('a[href^="#"]').on('click', function(event) {
+
+                var target = $(this.getAttribute('href'));
+            
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            
+            });

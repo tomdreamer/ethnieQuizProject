@@ -106,6 +106,10 @@ li{
     border-radius: 10px;
     margin: 40px 40px 0 40px ;
     opacity: 0.75;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    flex-direction: column;
 }
 
 .topImage{
@@ -147,6 +151,11 @@ aside{
 }
 
 /* BUTTON */
+
+.scroll{
+    width: 100px;
+}
+
 #download-button{
     background:linear-gradient(#504941, #5e554b) !important;
 }
@@ -188,7 +197,13 @@ button:active {
     margin: 38px;
     border-radius: 10px;
 }
-
+.bottomLink{
+    margin-left: 20px;
+    
+}
+.footer{
+    background-color: #5e554b;
+}
 @media (min-width: 576px) { 
     
     .imgQuestion{

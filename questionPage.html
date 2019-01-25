@@ -17,6 +17,9 @@
   integrity="pk.eyJ1IjoiYmFsMSIsImEiOiJjanJic3E2bHYxMmZwNDlvNGp6eHo3bjNnIn0.EGcgElAB50kQvflbFGv9Eg"
   crossorigin="">
   </script>  
+
+ <!--scroll down-->
+
     <!--END   Openstreet map api-->
     
     <!--Import Google Icon Font-->
@@ -40,7 +43,9 @@
           <aside class="questionBox col s6 padding-20">
             <div class="question">
               <h1 class= "nameEthnie">Kazakhs</h1>
-              <p class="qu">D'où vient cette éthnie?</p>
+              <button class="scroll home"><a href="#bottom" id="top">Click to map</a></button> 
+              <p class="qu">D'où vient cette éthnie?  </p>
+              
             </div>
             <div class="card-action">
               <button class="response responseA"><a class="responseA bt">Réponse A : Mongolie</a></button> 
@@ -66,15 +71,24 @@
           <div class="descMap">
           <div class="mapCss">
             <div id="map"></div>
-            <a href="./index.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1 home">Page d'acceuil</a>
           </div>
           
         </div>
+        <footer class="page-footer footer">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Thomas LESAGE
+            <a href="./index.html"  class="grey-text text-lighten-4 right bottomLink">Page d'acceuil</a>
+            <a href="#top" class="grey-text text-lighten-4 right">Top page</a>
+            </div>
+          </div>
+        </footer>
       </div>
         <div class="hover_bkgr_fricc">
           <span class="helper"></span>
           <div class="pop">
               <div class="popupCloseButton"> <br />Next Question <br />  </div>
+              
               <p class ="popUp">Add any HTML content<br />inside the popup box!</p>
           </div>
       </div>
